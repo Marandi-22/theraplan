@@ -1,0 +1,155 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #59c955;
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 280px;
+    background: #fff;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+a {
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 100%;
+    padding: 10px;
+}
+
+nav .fas {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+a:hover {
+    background: #eee;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+}
+
+.main {
+    margin-left: 280px; /* Ensure this matches the width of the sidebar */
+    padding: 20px;
+    width: calc(100% - 280px); /* Ensure this accounts for the width of the sidebar */
+}
+
+.main-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.main-top i {
+    color: rgb(110, 109, 109);
+    cursor: pointer;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.section {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.user-table,
+.case-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th,
+.case-table th {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table td,
+.case-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.add-user-btn,
+.edit-user,
+.delete-user,
+.allocate-case,
+.generate-report {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-user-btn:hover,
+.edit-user:hover,
+.delete-user:hover,
+.allocate-case:hover,
+.generate-report:hover {
+    background-color: #0056b3;
+}
